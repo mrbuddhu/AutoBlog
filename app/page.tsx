@@ -48,8 +48,8 @@ export default function HomePage() {
       <section className="relative h-screen flex items-center justify-start overflow-hidden">
         {/* Background Image */}
         <img
-          src="/lamborghini-supercar-red-wheels.jpeg"
-          alt="Lamborghini Supercar"
+          src="/hero-background.jpeg"
+          alt="Hero Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Dark Overlay */}
