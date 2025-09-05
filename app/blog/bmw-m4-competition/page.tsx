@@ -1,0 +1,97 @@
+import { Calendar, User, ArrowLeft } from "lucide-react"
+import Link from "next/link"
+import { Button } from "@/components/ui/button" // Updated import statement
+
+export default function BMWM4CompetitionPage() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200 px-4 py-3">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="w-8 h-8 bg-red-500 rounded flex items-center justify-center">
+              <span className="text-white font-bold text-sm">🚗</span>
+            </div>
+            <div className="flex flex-col">
+              <span className="font-bold text-xl text-gray-900">AutoBlog</span>
+              <span className="text-sm text-gray-500">Motor Vehicle Insights</span>
+            </div>
+          </Link>
+        </div>
+      </header>
+
+      <article className="max-w-4xl mx-auto px-4 py-12">
+        <Link href="/" className="inline-flex items-center text-red-500 hover:text-red-600 mb-8">
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Home
+        </Link>
+
+        <div className="mb-8">
+          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+            REVIEW
+          </span>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            BMW M4 Competition: Pure Driving Dynamics Redefined
+          </h1>
+          <div className="flex items-center space-x-6 text-gray-600">
+            <span className="flex items-center">
+              <User className="w-4 h-4 mr-2" />
+              James Wilson
+            </span>
+            <span className="flex items-center">
+              <Calendar className="w-4 h-4 mr-2" />
+              December 13, 2024
+            </span>
+          </div>
+        </div>
+
+        <img
+          src="/bmw-m4-competition-coupe-racing-blue-detailed.jpg"
+          alt="BMW M4 Competition"
+          className="w-full h-96 object-cover rounded-lg mb-8"
+        />
+
+        <div className="prose prose-lg max-w-none">
+          <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+            The BMW M4 Competition stands as a testament to BMW's commitment to pure driving dynamics, delivering an
+            uncompromising performance experience that puts the driver at the center of every moment.
+          </p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Performance That Speaks Volumes</h2>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            Under the hood lies a twin-turbocharged 3.0-liter inline-six engine producing 503 horsepower and 479 lb-ft
+            of torque. This powerplant propels the M4 Competition from 0-60 mph in just 3.8 seconds, with a top speed
+            electronically limited to 155 mph (180 mph with the M Driver's Package).
+          </p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Precision Engineering</h2>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            The M4 Competition features BMW's most advanced chassis technology, including adaptive M suspension, M
+            differential, and carbon fiber reinforced plastic (CFRP) components that reduce weight while increasing
+            structural rigidity. The result is a car that responds instantly to driver inputs with surgical precision.
+          </p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Track-Ready Technology</h2>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            BMW has equipped the M4 Competition with multiple driving modes, allowing drivers to customize everything
+            from throttle response to suspension stiffness. The M Track mode unleashes the car's full potential, while
+            Comfort mode makes it surprisingly livable for daily driving.
+          </p>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">The Verdict</h2>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            The BMW M4 Competition successfully bridges the gap between track performance and road usability. It's a car
+            that rewards skilled drivers while remaining accessible to enthusiasts of all levels. For those seeking pure
+            driving dynamics in a premium package, the M4 Competition delivers in spades.
+          </p>
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <Link href="/">
+            <Button className="bg-red-500 hover:bg-red-600 text-white">← Back to All Articles</Button>
+          </Link>
+        </div>
+      </article>
+    </div>
+  )
+}
